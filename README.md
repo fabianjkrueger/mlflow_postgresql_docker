@@ -1,25 +1,31 @@
-# MLFlow Docker Setup
+# MLflow Docker Setup
 
-## Overview
+## Quick Start
 
-This directory contains the files for setting up a MLFlow server and PostgreSQL
-database using Docker.
+### Requirements
 
-To keep control, this will *not* start automatically.
+- Docker
+- Git (optional, but makes it easier to get code via cloning)
 
-## How to use
+### Instructions
 
-```bash
-# build and run in background
-docker-compose up -d
+1. Clone this repository
+2. Create a `.env` file with your database credentials:
+   ```bash
+   POSTGRES_USER=your_username_here
+   POSTGRES_PASSWORD=your_secure_password_here
+   POSTGRES_DB=mlflow
+   ```
+3. Start the services:
+   ```bash
+   docker-compose up -d
+   ```
+4. Access MLflow UI at: `http://localhost:5001`
 
-# stop it
-docker-compose stop
+## Environment Variables
 
-# start again after stop
-docker-compose start
-
-# shit down and clean up
-docker-compose down
-```
+Create a `.env` file with these variables:
+- `POSTGRES_USER` - Database username
+- `POSTGRES_PASSWORD` - Database password (choose a secure one)
+- `POSTGRES_DB` - `mlflow`
 
