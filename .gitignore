@@ -1,0 +1,10 @@
+# hide credentials and environment variables from version control
+.env
+
+# also, my experiments should not be visible to everyone
+
+# PostgreSQL persistent storage
+pgdata/
+
+# MLFlow artifacts
+mlflow_artifacts/
