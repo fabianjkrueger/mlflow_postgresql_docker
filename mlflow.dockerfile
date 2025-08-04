@@ -9,3 +9,4 @@ CMD mlflow server \
     --port 5000 \
     --backend-store-uri postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB} \
     --default-artifact-root /mlflow_artifacts
+    --serve-artifacts
