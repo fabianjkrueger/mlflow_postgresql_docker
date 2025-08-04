@@ -5,4 +5,4 @@
 # PostgreSQL persistent storage
 pgdata/
 # MLFlow artifacts
-mlflow_artifacts/
+mlartifacts/

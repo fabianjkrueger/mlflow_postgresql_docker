@@ -29,4 +29,4 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=${POSTGRES_DB}
     volumes:
-      - ./mlflow_artifacts:/mlflow_artifacts
+      - ./mlartifacts:/mlartifacts:rw
